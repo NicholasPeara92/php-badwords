@@ -1,5 +1,5 @@
 <?php 
-  $badword = $_GET['badword'];
+  $badword = $_GET['badword'] ?? null;
   $paragraph = "Un insegnante di chimica con un cancro allo stadio terminale comincia a produrre e spacciare metanfetamina con un suo ex studente per assicurare un futuro alla famiglia.";
   $paragraph2 = str_replace($badword, "***", $paragraph);
 ?>
